@@ -9,10 +9,9 @@ int main(){
                                  // and initialize them to 0
 // do something with them:
 for(int i=0; i<size; ++i){
-    array[i] = i;
+    array[i] = rand()%100;
     cout << array[i] << endl;
 }
 // no need to delete anything
-
 return 0;
 }
