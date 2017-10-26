@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <cstdlib>
 #include <vector>
 
@@ -19,3 +19,4 @@ class C_array{
     struct S_array *root;
 };
 #endif
+*/

@@ -1,17 +1,36 @@
-#include "sort.h"
+/*#include "sort.h"
 
-C_array::C_array()
-{
+C_array::C_array(){
   this->root=NULL;
   //cout << "constructor"<<endl;
 }
-C_array::~C_array()
-{
+C_array::~C_array(){
   //cout << "constructor"<<endl;
 }
 
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
 
-/*bool C_Heap::CreateHeap(int capacity, int heap_type){
+void bubbleSort(int arr[], int n)
+{
+   int i, j;
+   for (i = 0; i < n-1; i++)
+
+       // Last i elements are already in place
+       for (j = 0; j < n-i-1; j++)
+           if (arr[j] > arr[j+1])
+              swap(&arr[j], &arr[j+1]);
+}
+
+
+
+
+
+bool C_Heap::CreateHeap(int capacity, int heap_type){
   S_Heap *h;
   h = new S_Heap;
 
